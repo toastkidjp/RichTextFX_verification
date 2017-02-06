@@ -1,0 +1,18 @@
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName   = 'jp.toastkid.rtfx_verification.Main'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compile 'org.fxmisc.richtext:richtextfx:1.0.0-SNAPSHOT'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.9.5'
+    testCompile group: 'org.testfx', name: 'testfx-junit', version: '4.0.5-alpha'
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import org.fxmisc.richtext.CodeArea?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+  fx:id="root" fx:controller="jp.toastkid.rtfx_verification.Controller">
+  <children>
+    <HBox alignment="CENTER" minHeight="450.0" spacing="5.0">
+      <children>
+        <CodeArea prefHeight="450.0" prefWidth="500.0"/>
+        <CodeArea fx:id="improved" editable="true"
+          prefHeight="450.0" prefWidth="500.0" wrapText="true"/>
+        <TextArea prefHeight="450.0" prefWidth="500.0"/>
+      </children>
+    </HBox>
+  </children>
+</VBox>
